@@ -16,9 +16,9 @@ public class Ex2 {
                     int guess = scanner.nextInt();
 
                     if (guess < 0 || guess > 9) {
-                        System.out.println("Пожалуйста, введите число от 1 до 9 или 0 для выхода.");
+                        System.err.println("Пожалуйста, введите число от 1 до 9 или 0 для выхода.");
                     } else if (guess == 0) {
-                        System.out.println("Выход из программы.");
+                        System.err.println("Выход из программы.");
                         break;
                     } else if (guess == secretNumber) {
                         System.out.println("Вы угадали!");
@@ -29,11 +29,10 @@ public class Ex2 {
                         System.out.println("Загаданное число меньше.");
                     }
                 } else {
-                    System.out.println("Пожалуйста, введите целое число.");
+                    System.err.println("Пожалуйста, введите целое число.");
                     scanner.next();
                 }
             }
-
             scanner.close();
         }
     }
